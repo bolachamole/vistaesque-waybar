@@ -51,7 +51,6 @@ window#waybar {
 #cpu,
 #custom-power,
 #disk,
-#idle_inhibitor,
 #language,
 #memory,
 #mode,
@@ -59,7 +58,6 @@ window#waybar {
 #power-profiles-daemon,
 #pulseaudio,
 #scratchpad,
-#tray,
 #wireplumber {
     padding: 0 10px;
     color: #ffffff;
@@ -107,7 +105,7 @@ window#waybar {
 }
 
 #custom-power:hover{
-    text-shadow: 1px 1px 4px #6291ad;
+    text-shadow: 0 0 4px #6291ad;
 }
 
 #language {
@@ -118,23 +116,10 @@ window#waybar {
     color: #fcc3c3;
 }
 
-#pulseaudio.muted {
-    color: #2a5c45;
-}
-
 #scratchpad {
     background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad.empty {
     background-color: transparent;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
 }

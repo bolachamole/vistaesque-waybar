@@ -3,7 +3,7 @@ Waybar configuration for Sway to give it a Windows Vista-esque frutiger aero loo
 # Installation
 Copy the waybar folder to your ~/.config/
 
-Make sure you have [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [Font Awesome](https://fontawesome.com/download) fonts installed.
+Make sure to have the fonts [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [Font Awesome](https://fontawesome.com/download) installed.
 
 # Useful shortcuts
 |                              |                                                         |
