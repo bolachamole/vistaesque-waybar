@@ -1,0 +1,140 @@
+* {
+    font-family: 'Noto Sans', 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-size: 14px;
+    border: none;
+}
+
+window#waybar {
+    color: #ffffff;
+    background: linear-gradient(rgba(30, 30, 30, 0.4) 45%, rgba(30, 30, 30, 0.7) 50%);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow:
+        0 6px 6px rgba(255, 255, 255, 0.7) inset,
+        0 13px 8px rgba(0, 0, 0, 0.2) inset,
+	    0 -6px 6px rgba(0, 0, 0, 0.7) inset,
+	    0 -13px 8px rgba(0, 0, 0, 0.2) inset;
+}
+
+#workspaces button {
+    margin: 0 2px 0;
+    border: 1px double rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    box-shadow: 0 0 2px inset;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: radial-gradient(ellipse at bottom, #6291ad, transparent);
+}
+
+#workspaces button.focused {
+    background-color: rgba(0, 2, 10, 0.5);
+}
+
+#workspaces button.urgent {
+    background: radial-gradient(ellipse at bottom, #ada964, transparent);
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#custom-power,
+#disk,
+#idle_inhibitor,
+#language,
+#memory,
+#mode,
+#network,
+#power-profiles-daemon,
+#pulseaudio,
+#scratchpad,
+#tray,
+#wireplumber {
+    padding: 0 10px;
+    color: #ffffff;
+    margin: 2px 0;
+}
+
+#battery, #cpu, #memory, #network, #pulseaudio {
+    text-shadow: -1px 0 #1e1e1e, 0 1px #1e1e1e, 1px 0 #1e1e1e, 0 -1px #1e1e1e;
+}
+
+#battery.full {
+    color: #3fcf00;
+}
+
+@keyframes blink {
+    to {
+        text-shadow: 0 0 4px white;
+        color: #000000;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#bluetooth {
+    color: #0a3e93;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#clock {
+    margin: 2px 26px 2px 0;
+}
+
+#custom-power {
+    margin: 0 10px 5px 0;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+#custom-power:hover{
+    text-shadow: 1px 1px 4px #6291ad;
+}
+
+#language {
+    min-width: 16px;
+}
+
+#network.disconnected {
+    color: #fcc3c3;
+}
+
+#pulseaudio.muted {
+    color: #2a5c45;
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
