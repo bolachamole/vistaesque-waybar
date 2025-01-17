@@ -1,4 +1,8 @@
+![image](/screenshot1.png)
+
 Waybar configuration for Sway to give it a Windows Vista-esque frutiger aero look.
+
+![image](/screenshot2.png)
 
 # Installation
 Copy the waybar folder to your ~/.config/
@@ -14,7 +18,7 @@ Make sure to have the fonts [Noto Sans](https://fonts.google.com/noto/specimen/N
 | ```mod+```arrow keys         | Switch through windows in a workspace                   |
 | ```mod+Shift+Space```        | Toggle window floating mode                             |
 | ```mod+-```                  | Open scratchpad                                         |
-| ```mod+Shift+-```            | Move current window to scratchpad (```mod+Shift+Space``` to get it back) |
+| ```mod+Shift+-```            | Move current window to scratchpad (```mod+Shift+Space``` to return it to workspace) |
 | ```mod+e```                  | Switch between vertical and horizontal container layout |
 | ```mod+w```                  | Switch on tabbed container layout                       |
 | ```mod+s```                  | Switch on stacked container layout                      |
