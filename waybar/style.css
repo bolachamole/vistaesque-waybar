@@ -15,8 +15,8 @@ window#waybar {
     margin-left: 2px;
     padding: 0 5px 3px;
     background-color: transparent;
-    color: #769bb6;
-    text-shadow: -1px 0 #3a3a3a, 0 1px #3a3a3a, 1px 0 #3a3a3a, 0 -1px #3a3a3a;
+    color: #76aeb6;
+    text-shadow: -1px 0 #1e1e1e, 0 1px #1e1e1e, 1px 0 #1e1e1e, 0 -1px #1e1e1e;
 }
 
 #workspaces button:hover {
@@ -25,6 +25,7 @@ window#waybar {
 
 #workspaces button.focused {
     color: white;
+    text-shadow: -1px 0 #3a3a3a, 0 1px #3a3a3a, 1px 0 #3a3a3a, 0 -1px #3a3a3a;
 }
 
 #workspaces button.urgent {
@@ -39,10 +40,10 @@ window#waybar {
 }
 
 #taskbar button {
-    margin: 0 2px;
+    margin: 2px 2px;
     min-width: 160px;
     border: 1px double rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 0 2px inset;
     color: #ffffff;
 }
