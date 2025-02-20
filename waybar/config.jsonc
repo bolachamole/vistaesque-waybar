@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "bottom",
     "height": 38,
-    "modules-left": ["custom/power", "sway/workspaces", "sway/scratchpad", "wlr/taskbar"],
+    "modules-left": ["custom/start", "sway/workspaces", "sway/scratchpad", "wlr/taskbar"],
     // "modules-center": [],
     "modules-right": [
         "sway/language",
@@ -45,15 +45,18 @@
     "cpu": {
         "format": ""
     },
-    "custom/power": {
+    "custom/start": {
         "format" : "",
 		"tooltip": false,
 		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml",
+		"menu-file": "$HOME/.config/waybar/start_menu.xml",
 		"menu-actions": {
+            "documents": "thunar $(xdg-user-dir DOCUMENTS)",
+            "pictures": "thunar $(xdg-user-dir PICTURES)",
+            "music": "thunar $(xdg-user-dir MUSIC)",
+			"poweroff": "systemctl poweroff",
 			"lock": "swaylock",
-			"hibernate": "systemctl hibernate",
-			"shutdown": "shutdown",
+			"suspend": "systemctl suspend",
 			"reboot": "reboot"
 		}
     },
