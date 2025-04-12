@@ -4,19 +4,6 @@
     border: none;
 }
 
-menu {
-    background: linear-gradient(rgb(58, 58, 58), rgb(0, 0, 0));
-    border: 1px double rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    box-shadow: 0 0 2px inset;
-    color: #ffffff;
-}
-
-menuitem:hover {
-    background: linear-gradient(rgb(158, 207, 208), rgb(122, 171, 176));
-    border-radius: 5px;
-}
-
 window#waybar {
     color: #ffffff;
     background: linear-gradient(rgba(30, 30, 30, 0.5) 48%, rgba(30, 30, 30, 0.8) 50%);

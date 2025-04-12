@@ -27,9 +27,6 @@
         "tooltip-format": "{capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
     "bluetooth":{
         "format-on": "",
 	    "format-disabled": "",
@@ -48,17 +45,7 @@
     "custom/start": {
         "format" : "",
 		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/start_menu.xml",
-		"menu-actions": {
-            "documents": "exec thunar $(xdg-user-dir DOCUMENTS)",
-            "pictures": "exec thunar $(xdg-user-dir PICTURES)",
-            "music": "exec thunar $(xdg-user-dir MUSIC)",
-			"poweroff": "systemctl poweroff",
-			"lock": "swaylock",
-			"suspend": "systemctl suspend",
-			"reboot": "reboot"
-		}
+        "on-click": "bash $HOME/.config/waybar/start_menu.sh"
     },
     "memory": {
         "format": "",

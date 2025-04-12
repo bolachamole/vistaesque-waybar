@@ -1,13 +1,13 @@
 ![image](/screenshot1.png)
 
-Waybar configuration for Sway to give it a Windows Vista-esque frutiger aero look.
+Waybar configuration for Sway to give it a Windows Vista-esque frutiger aero look. Note that the start menu module uses rofi.
 
 ![image](/screenshot2.png)
 
 # Installation
 Copy the waybar folder to your ~/.config/
 
-Make sure to have the fonts [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [Font Awesome](https://fontawesome.com/download) installed.
+Make sure to have the fonts [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [Font Awesome Free](https://fontawesome.com/download) installed.
 
 # Useful shortcuts
 |                              |                                                         |
@@ -17,7 +17,7 @@ Make sure to have the fonts [Noto Sans](https://fonts.google.com/noto/specimen/N
 | ```mod+Shift+```0-9 row keys | Move current window to another workspace                |
 | ```mod+```arrow keys         | Switch through windows in a workspace                   |
 | ```mod+Shift+Space```        | Toggle window floating mode                             |
-| ```mod+-```                  | Open scratchpad                                         |
+| ```mod+-```                  | Open and close scratchpad                               |
 | ```mod+Shift+-```            | Move current window to scratchpad (```mod+Shift+Space``` to return it to workspace) |
 | ```mod+e```                  | Switch between vertical and horizontal container layout |
 | ```mod+w```                  | Switch on tabbed container layout                       |
